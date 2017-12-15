@@ -2,6 +2,12 @@
   "name": "react-redux",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
   "dependencies": {
     "history": "^4.7.2",
     "react": "^16.2.0",
@@ -10,14 +16,16 @@
     "react-router-dom": "^4.2.2",
     "react-router-redux": "next",
     "react-scripts": "1.0.17",
+    "react-scripts-ts": "2.8.0",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
     "sanitize.css": "^5.0.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@types/jest": "^21.1.8",
+    "@types/node": "^8.5.1",
+    "@types/react": "^16.0.30",
+    "@types/react-dom": "^16.0.3",
+    "@types/react-router-redux": "^5.0.10"
   }
 }
