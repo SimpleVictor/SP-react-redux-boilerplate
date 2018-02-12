@@ -10,21 +10,43 @@ import {
 } from '../../modules/counter';
 
 const Home = props => (
-  <div>
-    <h1>Home</h1>
-    <p>Count: {props.count}</p>
+  <div className="container">
+    <div className="row">
+        <div className="twelve column">
+            <h1>Home</h1>
+        </div>
+    </div>
 
-    <p>
-      <button onClick={props.increment} disabled={props.isIncrementing}>Increment</button>
-      <button onClick={props.incrementAsync} disabled={props.isIncrementing}>Increment Async</button>
-    </p>
+    <div className="row">
+        <div className="twelve column">
+            <p>Count: {props.count}</p>
+        </div>
+    </div>
 
-    <p>
-      <button onClick={props.decrement} disabled={props.isDecrementing}>Decrement</button>
-      <button onClick={props.decrementAsync} disabled={props.isDecrementing}>Decrement Async</button>
-    </p>
+    <div className="row">
+        <div className="six columns">
+            <button onClick={props.increment} disabled={props.isIncrementing}>Increment</button>
+        </div>
+        <div className="six columns">
+            <button onClick={props.incrementAsync} disabled={props.isIncrementing}>Increment Async</button>
+        </div>
+    </div>
 
-    <p><button onClick={() => props.changePage()}>Go to about page via redux</button></p>
+      <div className="row">
+          <div className="six columns">
+              <button onClick={props.decrement} disabled={props.isDecrementing}>Decrement</button>
+          </div>
+          <div className="six columns">
+              <button onClick={props.decrementAsync} disabled={props.isDecrementing}>Decrement Async</button>
+          </div>
+      </div>
+
+      <div className="row">
+          <div className="twelve columns">
+              <button onClick={() => props.changePage()}>Go to about page via redux</button>
+          </div>
+      </div>
+
   </div>
 );
 
